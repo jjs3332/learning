@@ -1,0 +1,44 @@
+#div_body{
+  text-align:center ;}
+#color_p1{
+  color: #fa0000;
+  background-color: rgb(0,150,50);
+  display:block;
+  margin: 0px auto 0px auto;
+  border: 10px solid #0000fa;
+  text-align:center ;}
+#book_ol{
+  list-style-type: upper-roman;}
+.red{
+  background-color:#aa0000;
+  border: 5px solid #ff0000;
+  font-size: 20px;
+  margin: 5px;
+  box-shadow:inset 5px 5px 2px #ffffff;
+  text-shadow: 5px 5px 5px #000000;
+  padding: 5px;
+  border-radius:10px;}
+.yellow{
+  background-color: #eeee00;
+  border: 5px solid #ffff00;
+  font-size: 20px;
+  margin: 5px;
+  box-shadow:inset 5px 5px 2px #ffffff;
+  text-shadow: 5px 5px 5px #000000;
+  padding: 5px;
+ border-radius:10px;}
+.blue{
+  background-color:#0000ee;
+  border: 5px solid #0000ff;
+  font-size:20px;
+  margin:5px;
+  box-shadow:inset 5px 5px 2px #ffffff;
+  text-shadow: 5px 5px 5px #000000;
+  padding: 5px;
+  border-radius:10px;
+  margin-bottom: 100px !important;}
+.book_div{
+  background-color: #000000;
+  color:#ffffff;}
+#book_ol{
+  padding-bottom: px;}
