@@ -1,12 +1,11 @@
 # learning
-[ht1.html](https://github.com/user-attachments/files/23952665/ht1.html)
-<html>
-  <head>
-    <title>ht1</title>
-    <link rel="stylesheet" href="cs1.css" type="text/css">
-  </head>
-  <body>
-    <p id="color_p1">dfh</p>
-    <script src="js1.js"></script>
-  </body>
-</html>
+
+[js1.js](https://github.com/user-attachments/files/23952691/js1.js)
+var color_p1=document.getElementById('color_p1');
+var msg,i,j;
+for(i=1;i<10;i++){
+  for(j=1;j<=i;j++){
+    msg += j + '*' + i + '=' +j*i +' ';}
+  msg += '<br />'
+}
+color_p1.innerHTML = msg;
