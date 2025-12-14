@@ -1,1 +1,48 @@
+var inp_div1 = document.getElementById('inp_div1');
+inp_div1.onsubmit = function(e){
+  e.preventDefault();
+var pccj = document.getElementById('pccj').value; //1
+var kscj = document.getElementById('p2_kscj');
+var pcbl = document.getElementById('pcbl').value;
+var ksbl = document.getElementById('ksbl').value;
+var qwcj = document.getElementById('qwcj').value;
+var pccj1 = Number(pccj);
+var pcbl1 = Number(pcbl);
+var ksbl1 = Number(ksbl);
+var qwcj1 = Number(qwcj);
+var kscj_value,kscj1;//从1到该行的代码要放到事件处理程序里，如果在外面，填写数据前就会获取表单数据，而此时为空值。
+kscj_value = (qwcj1 - (pccj1 * pcbl1)) / ksbl1;
+kscj1 = kscj_value.toString();
+  kscj.textContent = kscj1;
+alert(pccj1);
+alert(pccj);};
 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      计算考试成绩
+    </title>
+    <link rel='stylesheet' href='csjskscj1.css' />
+  </head>
+  <body>
+    <h1><i>通过输入数据计算所需的考试成绩</i></h1>
+    <p id='p1'>你需要的考试成绩：</p>
+    <p id='p2_kscj'></P>
+    <div id='inp_div1'>
+      <form id='for1'>
+        <label for='pcbl'>平常分占比:</label>
+        <input id='pcbl' type='text' name='pcbl' /></br>
+        <label for='ksbl'>考试分占比:</label>
+        <input id='ksbl' type='text' name='ksbl' /></br>
+        <label for='pccj'>平常成绩:</label>
+        <input id='pccj' type='text' name='pccj' /></br>
+        <label for='qwcj'>你希望的综测成绩:</label>
+        <input id='qwcj' type='text' name='qwcj' />
+        <input id='sub1' type='submit' value='计算成绩' />
+      </form>
+    </div>
+    <script src='jsjskscj1.js'></script>
+  </body>
+</html>
